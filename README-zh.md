@@ -1,5 +1,8 @@
 # GxLib
+[English](README.md)
+
 一个通用的跨平台C++17类库。
+
 
 ## 功能
 - [Allocator](gx/include/gx/allocator.h), 提供了 LinearAllocator、HeapAllocator、PoolAllocator 以及辅助使用分配器的工具类: Pond.

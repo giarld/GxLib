@@ -1,4 +1,6 @@
 # GxLib
+[中文](README-zh.md)
+
 A versatile cross-platform C++17 class library.
 
 ## features
