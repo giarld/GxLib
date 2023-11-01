@@ -57,7 +57,7 @@ if (NOT WIN32)
 endif ()
 
 
-option(GX_ENABLE_TEST "Enable test." ON)
+option(ENABLE_GX_TEST "Enable gx test." ON)
 
 if (NOT GX_LIBS_INSTALL_DIR)
     set(GX_LIBS_INSTALL_DIR ${CMAKE_BINARY_DIR}/dev)
@@ -70,7 +70,7 @@ GetGitDependency(git@github.com:giarld/GxAny.git GxAny main)
 add_subdirectory(deps/GxAny/gany-interface)
 add_subdirectory(gx)
 
-if (GX_ENABLE_TEST)
+if (ENABLE_GX_TEST)
     GetGitDependency(git@github.com:google/googletest.git gtest v1.14.0)
     add_subdirectory(deps/gtest)
     add_subdirectory(deps/GxAny/gany-core)
