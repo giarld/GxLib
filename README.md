@@ -3,13 +3,13 @@
 
 A versatile cross-platform C++17 class library.
 
-## features
+## Features
 - [Allocator](gx/include/gx/allocator.h): Provides LinearAllocator, HeapAllocator, PoolAllocator, and a tool class to assist in using allocators: Pond.
 - [GByteArray](gx/include/gx/gbytearray.h): Byte array class, providing operations such as read and write, HASH calculation, compression and decompression, base64 encoding and decoding for continuous binary data.
 - [GCrypto](gx/include/gx/gcrypto.h): Provided some algorithms based on ECC encryption.
 - [GFile](gx/include/gx/gfile.h): 
-  - 1 Provide file operations: information acquisition, continuous read and write, random read and write, create, delete, rename; 
-  - 2 Provide directory operations such as creating, deleting, renaming, and listing files.
+  1. Provide file operations: information acquisition, continuous read and write, random read and write, create, delete, rename; 
+  2. Provide directory operations such as creating, deleting, renaming, and listing files.
 - [GHashSum](gx/include/gx/ghash_sum.h): Provide generation functions for Md5, Sha1, and Sha256.
 - [GIDAllocator](gx/include/gx/gid_allocator.h): ID fast allocation algorithm.
 - [GThread](gx/include/gx/gthread.h): Thread class provides convenient methods for creating and using threads, as well as methods for setting thread names and thread priorities.
