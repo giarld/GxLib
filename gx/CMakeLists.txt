@@ -12,6 +12,9 @@ if (APPLE)
             )
 endif (APPLE)
 
+add_subdirectory(external/libz/gx)
+add_subdirectory(external/tweetnacl)
+
 add_library(${TARGET_NAME}
         ${GX_CORE_SRC}
         )

@@ -65,16 +65,13 @@ endif ()
 
 include(cmake/GetGitDep.cmake)
 
-GetGitDependency(git@github.com:giarld/GxAny.git ${CMAKE_CURRENT_SOURCE_DIR}/deps GxAny main)
-
-add_subdirectory(external/libz/gx)
-add_subdirectory(external/tweetnacl)
+GetGitDependency(git@github.com:giarld/GxAny.git GxAny main)
 
 add_subdirectory(deps/GxAny/gany-interface)
 add_subdirectory(gx)
 
 if (GX_ENABLE_TEST)
-    GetGitDependency(git@github.com:google/googletest.git ${CMAKE_CURRENT_SOURCE_DIR}/deps gtest v1.14.0)
+    GetGitDependency(git@github.com:google/googletest.git gtest v1.14.0)
     add_subdirectory(deps/gtest)
     add_subdirectory(deps/GxAny/gany-core)
 
