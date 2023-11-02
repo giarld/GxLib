@@ -4,9 +4,7 @@ project(GxLib)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-if (NOT BUILD_SHARED_LIBS)
-    option(BUILD_SHARED_LIBS "build shared libs" ON)
-endif ()
+option(BUILD_SHARED_LIBS "Build shared libs" ON)
 
 if (NOT CMAKE_SIZEOF_VOID_P)
     if (CMAKE_CL_64)
