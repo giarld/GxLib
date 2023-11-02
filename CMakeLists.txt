@@ -4,8 +4,6 @@ project(GxLib)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-option(BUILD_SHARED_LIBS "Build shared libs" ON)
-
 if (NOT CMAKE_SIZEOF_VOID_P)
     if (CMAKE_CL_64)
         set(CMAKE_SIZEOF_VOID_P 8)
@@ -54,6 +52,7 @@ if (NOT WIN32)
     set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_MINSIZEREL ${T_LIBRARY_OUTPUT_PATH})
 endif ()
 
+option(BUILD_SHARED_LIBS "Build shared libs" ON)
 
 option(ENABLE_GX_TEST "Enable gx test." ON)
 
