@@ -41,7 +41,7 @@
 
 #endif
 
-#if GX_PLATFORM_LINUX || GX_PLATFORM_BSD
+#if GX_PLATFORM_LINUX || GX_PLATFORM_BSD || GX_PLATFORM_ANDROID
 
 #include <unistd.h>
 
