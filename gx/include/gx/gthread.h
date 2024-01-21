@@ -35,7 +35,7 @@
 
 GX_NS_BEGIN
 
-DEF_ENUM_5(ThreadPriority, 0,
+DEF_ENUM_5(ThreadPriority, uint8_t, 0,
            Normal,
            AboveNormal,
            BelowNormal,

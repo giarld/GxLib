@@ -43,7 +43,7 @@ void anyDebugOutputWriter(int level, const char *buffer)
 void logToAny()
 {
     auto GLog = GAnyClass::Class("", "GLog", "gx log system");
-    GAnyClass::registerToEnv(GLog);
+    GAny::Export(GLog);
     GLog->staticFunc("Log", [](const std::string &msg) {
                     Log("%s", msg.c_str());
                 })

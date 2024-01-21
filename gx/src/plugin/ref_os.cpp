@@ -42,7 +42,7 @@ void refOs()
                     "Get CPU architecture bit width name. "
                     "return: 32-bit|64-bit.")
          .staticFunc("execute", &os::execute);
-    GAnyClass::registerToEnv(clazz);
+    GAny::Export(clazz);
 }
 
 GX_NS_END
